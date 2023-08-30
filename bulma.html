@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT193G - Moment 1</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+            <li><a href="bulma.html">Bulma</a></li>
+            <li><a href="publ.html">Publicering</a></li>
+        </ul>
+    </nav>
+    <h1>Bulma</h1>
+    <p>Om ramverket...</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Beskrivning</th>
+                <th>Genre</th>
+                <th>Läst</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Harry Potter och De vises sten</td>
+                <td>"Harry Potter och De vises sten" är den första boken i en populär fantasybokserie skriven av J.K. Rowling...</td>
+                <td>Fantasy</td>
+                <td>Ja</td>
+            </tr>
+            <tr>
+                <td>Där kräftorna sjunger</td>
+                <td>"Där kräftorna sjunger" är en roman skriven av Delia Owens, publicerad 2018. Boken är en blandning av mysterium, naturbeskrivningar och människorelationer...</td>
+                <td>Drama</td>
+                <td>Ja</td>
+            </tr>
+            <tr>
+                <td>Ringens brödraskap</td>
+                <td>"Ringens brödraskap" är den första boken i trilogin "Sagan om ringen" av J.R.R. Tolkien...</td>
+                <td>Fantasy</td>
+                <td>Nej</td>
+            </tr>
+            <tr>
+                <td>Förbättring: En roman om kärlek och överlevnad</td>
+                <td>"Förbättring" är en spännande och gripande roman som kretsar kring olika karaktärers liv och öden. Berättelsen väver samman teman som kärlek, politik, överlevnad och teknologi...</td>
+                <td>Thriller</td>
+                <td>Nej</td>
+            </tr>
+            <tr>
+                <td>Stoner</td>
+                <td>"Stoner" är en roman som utforskar en människas liv och dess utmaningar i en enkel och gripande berättelse...</td>
+                <td>Roman</td>
+                <td>Nej</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <label for="title">Titel:</label>
+        <input type="text" id="title" name="title">
+        <label for="descript">Beskrivning:</label>
+        <textarea name="descript" id="descript"></textarea>
+        <label for="genre">Genre:</label>
+        <select name="genre" id="genre">
+            <option value="fantasy">Fantasy</option>
+            <option value="drama">Drama</option>
+            <option value="thriller">Thriller</option>
+            <option value="roman">Roman</option>
+            <option value="biografi">Biografi</option>
+            <option value="fakta">Fakta</option>
+        </select>
+        <label for="read">Läst:</label>
+        <input type="checkbox" id="read" name="read">
+        <button>Lägg till</button>
+    </form>
+</body>
+
+</html>
