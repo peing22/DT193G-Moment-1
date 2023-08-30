@@ -19,74 +19,84 @@
                 <li><a href="publ.html">Publicering</a></li>
             </ul>
         </nav>
-        <h1>Bootstrap</h1>
-        <p>Om ramverket...</p>
-        <table>
-            <thead>
+        <h1 class="text-center">Bootstrap</h1>
+        <p class="lead text-center">Om ramverket...</p>
+        <table class="table align-middle mb-5">
+            <thead class="table-dark">
                 <tr>
                     <th>Titel</th>
-                    <th>Beskrivning</th>
                     <th>Genre</th>
+                    <th>Beskrivning</th>
                     <th>Läst</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Harry Potter och De vises sten</td>
+                    <td>Fantasy</td>
                     <td>"Harry Potter och De vises sten" är den första boken i en populär fantasybokserie skriven av
                         J.K.
                         Rowling...</td>
-                    <td>Fantasy</td>
                     <td>Ja</td>
                 </tr>
                 <tr>
                     <td>Där kräftorna sjunger</td>
+                    <td>Drama</td>
                     <td>"Där kräftorna sjunger" är en roman skriven av Delia Owens, publicerad 2018. Boken är en
                         blandning
                         av mysterium, naturbeskrivningar och människorelationer...</td>
-                    <td>Drama</td>
                     <td>Ja</td>
                 </tr>
                 <tr>
                     <td>Ringens brödraskap</td>
-                    <td>"Ringens brödraskap" är den första boken i trilogin "Sagan om ringen" av J.R.R. Tolkien...</td>
                     <td>Fantasy</td>
+                    <td>"Ringens brödraskap" är den första boken i trilogin "Sagan om ringen" av J.R.R. Tolkien...</td>
                     <td>Nej</td>
                 </tr>
                 <tr>
                     <td>Förbättring: En roman om kärlek och överlevnad</td>
+                    <td>Thriller</td>
                     <td>"Förbättring" är en spännande och gripande roman som kretsar kring olika karaktärers liv och
                         öden.
                         Berättelsen väver samman teman som kärlek, politik, överlevnad och teknologi...</td>
-                    <td>Thriller</td>
                     <td>Nej</td>
                 </tr>
                 <tr>
                     <td>Stoner</td>
+                    <td>Roman</td>
                     <td>"Stoner" är en roman som utforskar en människas liv och dess utmaningar i en enkel och gripande
                         berättelse...</td>
-                    <td>Roman</td>
                     <td>Nej</td>
                 </tr>
             </tbody>
         </table>
-        <form>
-            <label for="title">Titel:</label><br>
-            <input type="text" id="title" name="title"><br>
-            <label for="descript">Beskrivning:</label><br>
-            <textarea name="descript" id="descript"></textarea><br>
-            <label for="genre">Genre:</label><br>
-            <select name="genre" id="genre">
-                <option value="fantasy">Fantasy</option>
-                <option value="drama">Drama</option>
-                <option value="thriller">Thriller</option>
-                <option value="roman">Roman</option>
-                <option value="biografi">Biografi</option>
-                <option value="fakta">Fakta</option>
-            </select><br>
-            <label for="read">Läst:</label>
-            <input type="checkbox" id="read" name="read"><br>
-            <button>Lägg till</button>
+        <form class="m-1 mb-5 row g-3 alert alert-secondary">
+            <div class="col-md-6">
+                <label for="title" class="form-label">Titel</label>
+                <input type="text" id="title" name="title" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="genre" class="mb-2">Genre</label>
+                <select name="genre" id="genre" class="form-select">
+                    <option value="fantasy">Fantasy</option>
+                    <option value="drama">Drama</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="roman">Roman</option>
+                    <option value="biografi">Biografi</option>
+                    <option value="fakta">Fakta</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <label for="descript" class="form-label">Beskrivning</label>
+                <textarea name="descript" id="descript" class="form-control"></textarea>
+            </div>
+            <div>
+                <label for="read" class="form-check-label">Läst</label>
+                <input type="checkbox" id="read" name="read" class="form-check-input">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-dark btn-lg form-control">Lägg till</button>
+            </div>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
