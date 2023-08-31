@@ -31,10 +31,19 @@
                 </div>
             </div>
         </nav>
-        <h1 class="text-center">Bootstrap</h1>
-        <p class="lead text-center px-5">En undersida med information om ramverket, med länk till ramverkets webbplats.
-            Beskriv vad du tycker är bra med ramverket, och om det finns några saker du tycker är mindre bra. <a
-                href="https://getbootstrap.com/">Bootstrap</a></p>
+        <h1 class="text-center mb-4"><a href="https://getbootstrap.com/"
+                class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Bootstrap</a>
+        </h1>
+        <p class="lead text-center px-5">Bootstrap är ett populärt och kraftfullt ramverk som kan användas för att bygga
+            responsiva och estetiskt tilltalande webbapplikationer med hjälp av HTML, CSS och JavaScript. Bootstrap
+            erbjuder en samling fördefinierade stilregler, komponenter och layoutverktyg som gör det enkelt att skapa
+            enhetliga och moderna användargränssnitt.</p>
+        <p class="lead text-center px-5">Jag tycker att Bootstrap erbjuder en bra dokumentation som gör det enkelt att
+            förstå de grundläggande funktionerna i ramverket. Det är en stor fördel att Bootstrap har inbyggt stöd för
+            responsiv design och att det finns många fördefinierade komponenter för exempelvis navigering, tabeller,
+            formulär och knappar som kan användas för att snabbt skapa stilen för webbplatsen. Däremot upplever jag att
+            valmöjligheterna när det gäller färg, typsnitt, storlekar osv. är begränsade i grundutförandet och jag hade
+            uppskattat fler valmöjligheter utan att behöva skapa egna anpassningar.</p>
         <table class="table align-middle my-5">
             <thead class="table-dark">
                 <tr>
@@ -98,22 +107,24 @@
                     <option value="fakta">Fakta</option>
                 </select>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-10 col-xl-11">
                 <label for="descript" class="form-label fs-5 fw-semibold">Beskrivning</label>
                 <textarea name="descript" id="descript" class="form-control"></textarea>
             </div>
-            <fieldset>
-                <legend class="fs-5 fw-semibold">Status</legend>
-                <div class="form-check">
-                    <input type="checkbox" id="read" name="read" class="form-check-input">
-                    <label for="read" class="form-check-label">Läst</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" id="unread" name="unread" class="form-check-input">
-                    <label for="unread" class="form-check-label">Oläst</label>
-                </div>
-            </fieldset>
-            <div class="mb-3">
+            <div class="col-md-2 col-xl-1">
+                <fieldset>
+                    <legend class="fs-5 fw-semibold">Status</legend>
+                    <div class="form-check">
+                        <input type="checkbox" id="read" name="read" class="form-check-input">
+                        <label for="read" class="form-check-label">Läst</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="unread" name="unread" class="form-check-input">
+                        <label for="unread" class="form-check-label">Oläst</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="mt-4 mb-2">
                 <button type="submit" class="btn btn-dark btn-lg form-control fw-semibold">Lägg till</button>
             </div>
         </form>
