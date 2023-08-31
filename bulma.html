@@ -5,23 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DT193G - Moment 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
     <div class="container">
-        <nav >
-                    <ul>
-                        <li><a href="index.html">Hem</a></li>
-                        <li><a href="bootstrap.html">Bootstrap</a></li>
-                        <li><a href="bulma.html">Bulma</a></li>
-                        <li><a href="publ.html">Publicering</a></li>
-                    </ul>
+        <nav class="navbar is-dark" aria-label="main navigation">
+            <div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="mainMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Hem</a>
+                    <a class="navbar-item" href="bootstrap.html">Bootstrap</a>
+                    <a class="navbar-item is-active" href="bulma.html">Bulma</a>
+                    <a class="navbar-item" href="publ.html">Publicering</a>
+                </div>
+            </div>
         </nav>
-        <h1><a href="https://bulma.io/" target="_blank">Bulma</a>
-        </h1>
-        <p>Bulma är...</p>
-        <p>Jag tycker att...</p>
-        <table>
+        <div class="content is-medium">
+            <h1 class="title"><a href="https://bulma.io/" target="_blank">Bulma</a></h1>
+            <p>Bulma är...</p>
+            <p>Jag tycker att...</p>
+        </div>
+        <table class="table">
             <thead>
                 <tr>
                     <th>Titel</th>
@@ -102,11 +114,26 @@
                 </fieldset>
             </div>
             <div>
-                <button type="submit">Lägg till</button>
+                <button type="submit" class="button is-dark is-medium is-fullwidth">Lägg till</button>
             </div>
         </form>
         <br><br><br>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
+    </script>
 </body>
 
 </html>
