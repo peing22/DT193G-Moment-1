@@ -27,14 +27,22 @@
             </div>
         </div>
     </nav>
-    <div class="container is-max-widescreen">
+    <div class="container">
         <div class="content is-medium has-text-centered">
             <h1 class="title mt-6"><a class="has-text-grey is-underlined" href="https://bulma.io/"
                     target="_blank">Bulma</a></h1>
-            <p>Bulma är...</p>
-            <p>Jag tycker att...</p>
+            <p class="px-6">Bulma är ett modernt och lätt ramverk som används för att bygga responsiva och stilrena
+                webbapplikationer med HTML och CSS. Ramverket är baserat på Sass och erbjuder en uppsättning
+                fördefinierade klasser som kan appliceras på HTML-element för att snabbt styla dem och göra dem
+                responsiva. Bulma är gratis att använda, enkelt och minimalistiskt.</p>
+            <p class="px-6">Jag upplever att Bulma är ganska enkelt att börja använda som nybörjare. Det har en tydlig dokumentation
+                och täcker in många komponenter som vanligen används på enklare webbplatser. En nackdel med ramverket är
+                att det inte innehåller någon JavaScript, vilket krävde att jag exempelvis var tvungen att lägga till
+                JavaScript-kod för att hantera den responsiva navigeringsmenyn. Det märks att Bulma är ett enklare
+                ramverk än exempelvis Bootstrap och jag hade lite svårare att skapa stilen för webbsidan med Bulma
+                jämfört med Bootstrap.</p>
         </div>
-        <table class="table mx-auto">
+        <table class="table is-fullwidth my-6">
             <thead class="has-background-dark">
                 <tr>
                     <th class="has-text-white">Titel</th>
@@ -84,11 +92,11 @@
         <form class="has-background-grey-lighter p-6 box has-shadow">
             <div class="columns">
                 <div class="field column">
-                    <label class="label" for="title">Titel</label>
+                    <label class="label is-size-5" for="title">Titel</label>
                     <input class="input" type="text" id="title" name="title">
                 </div>
                 <div class="field column">
-                    <label class="label" for="genre">Genre</label>
+                    <label class="label is-size-5" for="genre">Genre</label>
                     <div class="select is-fullwidth">
                         <select name="genre" id="genre">
                             <option value="fantasy">Fantasy</option>
@@ -103,12 +111,12 @@
             </div>
             <div class="columns">
                 <div class="field column is-10">
-                    <label class="label" for="descript">Beskrivning</label>
+                    <label class="label is-size-5" for="descript">Beskrivning</label>
                     <textarea name="descript" id="descript" class="textarea" rows="1"></textarea>
                 </div>
                 <div class="field column">
                     <fieldset>
-                        <legend class="label">Status</legend>
+                        <legend class="label is-size-5">Status</legend>
                         <div>
                             <input type="checkbox" id="read" name="read">
                             <label for="read">Läst</label>
