@@ -11,23 +11,35 @@
 
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="bootstrap.html">Bootstrap</a></li>
-                <li><a href="bulma.html">Bulma</a></li>
-                <li><a href="publ.html">Publicering</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body mb-5"
+            data-bs-theme="dark">
+            <div class="container-fluid">
+                <span></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="bootstrap.html">Bootstrap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bulma.html">Bulma</a></li>
+                        <li class="nav-item"><a class="nav-link" href="publ.html">Publicering</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <h1 class="text-center">Bootstrap</h1>
         <p class="lead text-center">Om ramverket...</p>
-        <table class="table align-middle mb-5">
+        <table class="table align-middle mb-5 mt-5">
             <thead class="table-dark">
                 <tr>
                     <th>Titel</th>
                     <th>Genre</th>
                     <th>Beskrivning</th>
-                    <th>Läst</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,7 +49,7 @@
                     <td>"Harry Potter och De vises sten" är den första boken i en populär fantasybokserie skriven av
                         J.K.
                         Rowling...</td>
-                    <td>Ja</td>
+                    <td>Läst</td>
                 </tr>
                 <tr>
                     <td>Där kräftorna sjunger</td>
@@ -45,13 +57,13 @@
                     <td>"Där kräftorna sjunger" är en roman skriven av Delia Owens, publicerad 2018. Boken är en
                         blandning
                         av mysterium, naturbeskrivningar och människorelationer...</td>
-                    <td>Ja</td>
+                    <td>Läst</td>
                 </tr>
                 <tr>
                     <td>Ringens brödraskap</td>
                     <td>Fantasy</td>
                     <td>"Ringens brödraskap" är den första boken i trilogin "Sagan om ringen" av J.R.R. Tolkien...</td>
-                    <td>Nej</td>
+                    <td>Oläst</td>
                 </tr>
                 <tr>
                     <td>Förbättring: En roman om kärlek och överlevnad</td>
@@ -59,14 +71,14 @@
                     <td>"Förbättring" är en spännande och gripande roman som kretsar kring olika karaktärers liv och
                         öden.
                         Berättelsen väver samman teman som kärlek, politik, överlevnad och teknologi...</td>
-                    <td>Nej</td>
+                    <td>Oläst</td>
                 </tr>
                 <tr>
                     <td>Stoner</td>
                     <td>Roman</td>
                     <td>"Stoner" är en roman som utforskar en människas liv och dess utmaningar i en enkel och gripande
                         berättelse...</td>
-                    <td>Nej</td>
+                    <td>Oläst</td>
                 </tr>
             </tbody>
         </table>
@@ -90,10 +102,17 @@
                 <label for="descript" class="form-label">Beskrivning</label>
                 <textarea name="descript" id="descript" class="form-control"></textarea>
             </div>
-            <div>
-                <label for="read" class="form-check-label">Läst</label>
-                <input type="checkbox" id="read" name="read" class="form-check-input">
-            </div>
+            <fieldset>
+                <legend>Status</legend>
+                <div class="form-check">
+                    <input type="checkbox" id="read" name="read" class="form-check-input">
+                    <label for="read" class="form-check-label">Läst</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="unread" name="unread" class="form-check-input">
+                    <label for="unread" class="form-check-label">Oläst</label>
+                </div>
+            </fieldset>
             <div class="mb-3">
                 <button type="submit" class="btn btn-dark btn-lg form-control">Lägg till</button>
             </div>
