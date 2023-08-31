@@ -19,27 +19,28 @@
         </div>
 
         <div id="mainMenu" class="navbar-menu">
-            <div class="navbar-start is-size-5 has-text-weight-bold m-2">
-                <a class="navbar-item ml-2 has-text-grey-light" href="index.html">Hem</a>
+            <div class="navbar-start is-size-5 has-text-weight-bold m-2 ml-3">
+                <a class="navbar-item has-text-grey-light" href="index.html">Hem</a>
                 <a class="navbar-item has-text-grey-light" href="bootstrap.html">Bootstrap</a>
                 <a class="navbar-item" href="bulma.html">Bulma</a>
                 <a class="navbar-item has-text-grey-light" href="publ.html">Publicering</a>
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container is-max-widescreen">
         <div class="content is-medium has-text-centered">
-            <h1 class="title mt-5"><a href="https://bulma.io/" target="_blank">Bulma</a></h1>
+            <h1 class="title mt-6"><a class="has-text-grey is-underlined" href="https://bulma.io/"
+                    target="_blank">Bulma</a></h1>
             <p>Bulma är...</p>
             <p>Jag tycker att...</p>
         </div>
         <table class="table mx-auto">
-            <thead>
+            <thead class="has-background-dark">
                 <tr>
-                    <th>Titel</th>
-                    <th>Genre</th>
-                    <th>Beskrivning</th>
-                    <th>Status</th>
+                    <th class="has-text-white">Titel</th>
+                    <th class="has-text-white">Genre</th>
+                    <th class="has-text-white">Beskrivning</th>
+                    <th class="has-text-white">Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -80,40 +81,46 @@
                 </tr>
             </tbody>
         </table>
-        <form>
-            <div>
-                <label for="title">Titel</label>
-                <input type="text" id="title" name="title">
-            </div>
-            <div>
-                <label for="genre">Genre</label>
-                <select name="genre" id="genre">
-                    <option value="fantasy">Fantasy</option>
-                    <option value="drama">Drama</option>
-                    <option value="thriller">Thriller</option>
-                    <option value="roman">Roman</option>
-                    <option value="biografi">Biografi</option>
-                    <option value="fakta">Fakta</option>
-                </select>
-            </div>
-            <div>
-                <label for="descript">Beskrivning</label>
-                <textarea name="descript" id="descript"></textarea>
-            </div>
-            <div>
-                <fieldset>
-                    <legend>Status</legend>
-                    <div>
-                        <input type="checkbox" id="read" name="read">
-                        <label for="read">Läst</label>
+        <form class="has-background-grey-lighter p-6 box has-shadow">
+            <div class="columns">
+                <div class="field column">
+                    <label class="label" for="title">Titel</label>
+                    <input class="input" type="text" id="title" name="title">
+                </div>
+                <div class="field column">
+                    <label class="label" for="genre">Genre</label>
+                    <div class="select is-fullwidth">
+                        <select name="genre" id="genre">
+                            <option value="fantasy">Fantasy</option>
+                            <option value="drama">Drama</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="roman">Roman</option>
+                            <option value="biografi">Biografi</option>
+                            <option value="fakta">Fakta</option>
+                        </select>
                     </div>
-                    <div>
-                        <input type="checkbox" id="unread" name="unread">
-                        <label for="unread">Oläst</label>
-                    </div>
-                </fieldset>
+                </div>
             </div>
-            <div>
+            <div class="columns">
+                <div class="field column is-10">
+                    <label class="label" for="descript">Beskrivning</label>
+                    <textarea name="descript" id="descript" class="textarea" rows="1"></textarea>
+                </div>
+                <div class="field column">
+                    <fieldset>
+                        <legend class="label">Status</legend>
+                        <div>
+                            <input type="checkbox" id="read" name="read">
+                            <label for="read">Läst</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="unread" name="unread">
+                            <label for="unread">Oläst</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="field">
                 <button type="submit" class="button is-dark is-medium is-fullwidth">Lägg till</button>
             </div>
         </form>
