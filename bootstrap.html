@@ -21,19 +21,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold fs-5">
+                        <li class="nav-item ms-2"><a class="nav-link" href="index.html">Hem</a></li>
+                        <li class="nav-item  ms-2"><a class="nav-link active" aria-current="page"
                                 href="bootstrap.html">Bootstrap</a></li>
-                        <li class="nav-item"><a class="nav-link" href="bulma.html">Bulma</a></li>
-                        <li class="nav-item"><a class="nav-link" href="publ.html">Publicering</a></li>
+                        <li class="nav-item  ms-2"><a class="nav-link" href="bulma.html">Bulma</a></li>
+                        <li class="nav-item  ms-2"><a class="nav-link" href="publ.html">Publicering</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <h1 class="text-center">Bootstrap</h1>
-        <p class="lead text-center">Om ramverket...</p>
-        <table class="table align-middle mb-5 mt-5">
+        <p class="lead text-center px-5">En undersida med information om ramverket, med länk till ramverkets webbplats.
+            Beskriv vad du tycker är bra med ramverket, och om det finns några saker du tycker är mindre bra. <a
+                href="https://getbootstrap.com/">Bootstrap</a></p>
+        <table class="table align-middle my-5">
             <thead class="table-dark">
                 <tr>
                     <th>Titel</th>
@@ -80,13 +82,13 @@
                 </tr>
             </tbody>
         </table>
-        <form class="m-1 mb-5 row g-3 alert alert-secondary">
+        <form class="m-1 mb-5 row g-3 shadow-lg p-4 bg-secondary-subtle rounded">
             <div class="col-md-6">
-                <label for="title" class="form-label">Titel</label>
+                <label for="title" class="form-label fs-5 fw-semibold">Titel</label>
                 <input type="text" id="title" name="title" class="form-control">
             </div>
             <div class="col-md-6">
-                <label for="genre" class="mb-2">Genre</label>
+                <label for="genre" class="mb-2 fs-5 fw-semibold">Genre</label>
                 <select name="genre" id="genre" class="form-select">
                     <option value="fantasy">Fantasy</option>
                     <option value="drama">Drama</option>
@@ -97,11 +99,11 @@
                 </select>
             </div>
             <div class="col-md-12">
-                <label for="descript" class="form-label">Beskrivning</label>
+                <label for="descript" class="form-label fs-5 fw-semibold">Beskrivning</label>
                 <textarea name="descript" id="descript" class="form-control"></textarea>
             </div>
             <fieldset>
-                <legend>Status</legend>
+                <legend class="fs-5 fw-semibold">Status</legend>
                 <div class="form-check">
                     <input type="checkbox" id="read" name="read" class="form-check-input">
                     <label for="read" class="form-check-label">Läst</label>
@@ -112,9 +114,10 @@
                 </div>
             </fieldset>
             <div class="mb-3">
-                <button type="submit" class="btn btn-dark btn-lg form-control">Lägg till</button>
+                <button type="submit" class="btn btn-dark btn-lg form-control fw-semibold">Lägg till</button>
             </div>
         </form>
+        <br><br><br>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
