@@ -9,32 +9,34 @@
 </head>
 
 <body>
-    <nav class="navbar is-dark" aria-label="main navigation">
-        <div>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="mainMenu" class="navbar-menu">
-            <div class="navbar-start is-size-5 has-text-weight-bold m-2 ml-3">
-                <a class="navbar-item has-text-grey-light" href="index.html">Hem</a>
-                <a class="navbar-item has-text-grey-light" href="bootstrap.html">Bootstrap</a>
-                <a class="navbar-item" href="bulma.html">Bulma</a>
-                <a class="navbar-item has-text-grey-light" href="publ.html">Publicering</a>
+    <header>
+        <nav class="navbar is-dark" aria-label="main navigation">
+            <div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-        </div>
-    </nav>
-    <div class="container">
+
+            <div id="mainMenu" class="navbar-menu">
+                <div class="navbar-start is-size-5 has-text-weight-bold m-2 ml-3">
+                    <a class="navbar-item has-text-grey-light" href="index.html">Startsida</a>
+                    <a class="navbar-item has-text-grey-light" href="bootstrap.html">Bootstrap</a>
+                    <a class="navbar-item" href="bulma.html">Bulma</a>
+                    <a class="navbar-item has-text-grey-light" href="publ.html">Publicering</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container px-2">
         <div class="content is-medium has-text-centered">
             <h1 class="title mt-6">Bulma</h1>
-            <p class="px-6">Bulma är ett modernt och lätt ramverk som används för att bygga responsiva och stilrena
+            <p>Bulma är ett modernt och lätt ramverk som används för att bygga responsiva och stilrena
                 webbapplikationer med HTML och CSS. Ramverket är baserat på Sass och erbjuder en uppsättning
                 fördefinierade klasser som kan appliceras på HTML-element för att snabbt styla dem och göra dem
                 responsiva. Bulma är gratis att använda, enkelt och minimalistiskt.</p>
-            <p class="px-6">Jag upplever att Bulma är ganska enkelt att börja använda som nybörjare. Det har en tydlig
+            <p>Jag upplever att Bulma är ganska enkelt att börja använda som nybörjare. Det har en tydlig
                 dokumentation
                 och täcker in många komponenter som vanligen används på enklare webbplatser. En nackdel med ramverket är
                 att det inte innehåller någon JavaScript, vilket krävde att jag exempelvis var tvungen att lägga till
@@ -90,7 +92,7 @@
                 </tr>
             </tbody>
         </table>
-        <form class="has-background-grey-lighter p-6 box has-shadow">
+        <form class="has-background-grey-lighter p-6 box has-shadow mb-6">
             <div class="columns">
                 <div class="field column">
                     <label class="label is-size-5" for="title">Titel</label>
@@ -133,8 +135,10 @@
                 <button type="submit" class="button is-dark is-medium is-fullwidth">Lägg till</button>
             </div>
         </form>
-        <br><br><br>
-    </div>
+    </main>
+    <footer class="footer has-text-centered has-background-dark has-text-white">
+        <p>Petra Ingemarsson, 2023</p>
+    </footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
